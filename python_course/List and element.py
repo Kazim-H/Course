@@ -1,3 +1,5 @@
+#iven an integer list and an integer element. The task is to find if the given element is present in list or not.
+# Display the position (index) of the element
 list = [75, 55, 22, 82, 12]
 element = 22
 
