@@ -35,13 +35,9 @@ else:
     print("Password Strength: Weak.")
 
 # #Character Frequency Counter:
-input_string = input("Enter a string: ")
-frequency = {}
-for char in input_string:
-    if char in frequency:
-        frequency[char] += 1
-    else:
-        frequency[char]=1
+string = input("Enter a word: ")
 print("Character frequencies:")
-for char, frequency in frequency.items():
-    print(f"{char}: {frequency}")
+for char in string:
+    count = string.count(char)
+    print(f"{char}: {count}")
+
