@@ -37,7 +37,10 @@ else:
 # #Character Frequency Counter:
 string = input("Enter a word: ")
 print("Character frequencies:")
-for char in string:
-    count = string.count(char)
-    print(f"{char}: {count}")
+printed = []
+for letter in string:
+    if letter not in printed:
+        count = string.count(letter)
+        printed.append(letter)
+        print(f"{letter}: {count}")
 
